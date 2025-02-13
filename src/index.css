@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'ES Rebond Grotesque Regular';
+    src: url('../src/assets/fonts/ESRebondGrotesque-Regular.woff2') format('woff2'),
+        url('../src/assets/fonts/ESRebondGrotesque-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ES Rebond Grotesque Bold';
+    src: url('../src/assets/fonts/ESRebondGrotesque-Semibold.woff2') format('woff2'),
+        url('../src/assets/fonts/ESRebondGrotesque-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@import "tailwindcss";
+
+
+@theme {
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 800px;
+    --breakpoint-xl: 1500px;
+
+    --font-reg: 'ES Rebond Grotesque Regular', 'sans-serif';
+    --font-bold: 'ES Rebond Grotesque Bold', 'sans-serif';
+
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-deep-teal: #0f282d;
+    --color-green: #d1ff3b;
+    --color-blue: #7af1ff;
+    --color-purple: #544ae5;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@layer utilities {
+    /* Custom media queries for height */
+    @media (min-height: 1899px) {
+        body {
+            background: red;
+        }
+        .height-lg\:dblock {
+            display: block;
+        }
+        .height-lg\:pb-120px {
+            padding-bottom: 120px;
+        }
+        .height-lg\:pt-50px {
+            padding-top: 50px;
+        }
+        .height-lg\:text-100px {
+            font-size: 100px;
+        }
+        .height-lg\:leading-140px {
+            line-height: 140px;
+        }
+        .height-lg\:text-50px {
+            font-size: 50px;
+        }
+        .height-lg\:pt-140px {
+            padding-top: 140px;
+        }
+        .height-lg\:pb-140px {
+            padding-bottom: 140px;
+        }
+    }
+}
