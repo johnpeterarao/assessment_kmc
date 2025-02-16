@@ -67,11 +67,11 @@ html, body {
         .height-lg\:text-50px {
             font-size: 50px;
         }
-        .height-lg\:pt-140px {
-            padding-top: 140px;
+        .height-lg\:pt-144px {
+            padding-top: 144px;
         }
-        .height-lg\:pb-140px {
-            padding-bottom: 140px;
+        .height-lg\:pb-144px {
+            padding-bottom: 144px;
         }
     }
 }
